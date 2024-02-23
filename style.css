@@ -1,0 +1,106 @@
+*{
+  font-family: ysabeau infant;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.guess {
+  background: #000;
+  outline: none;
+  border: none;
+  color: #fff;
+}
+.input-field{
+  width: 300px;
+  display: flex;
+  margin: 30px auto;
+}
+button{
+  color: #000;
+  background: #fff;
+  border: none;
+  font-size: 16px;
+  padding: 4px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.input-field input{
+  font-size: 15px;
+  width: 100%;
+  padding: 7px;
+  border: 1px solid rgb(241, 241, 241);
+  box-shadow: 0px 0px 6px 1px rgba(0,0,0,.13);
+  outline: none;
+}
+.input-field button{
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 170px;
+}
+body{
+  height: 100vh;
+  background: #2c1762;
+  padding: 20px;
+}
+.container{
+  margin: 70px auto;
+  padding: 10px 10px 20px 10px;
+  background: crimson;
+  color: #fff;
+  width: 400px;
+  height: 400px;
+}
+.logo{
+  color: white;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+}
+.see {
+  text-decoration: none;
+  border: none;
+  font-size: 16px;
+  padding: 4px 12px;
+  cursor: pointer;
+  background: #000;
+  border-radius: 4px;
+  color: white;
+}
+
+
+@font-face {
+  font-family: ysabeau infant;
+  src: url(./YsabeauInfant-VariableFont_wght.ttf);
+}
+
+@media (max-width: 460px) {
+  .container{
+    width: 300px;
+    height: 330px;
+  }
+  .navbar{
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+  }
+  .navbar a{
+    text-decoration: none;
+    border: none;
+    font-size: 16px;
+    padding: 4px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    color: white;
+  }
+  .input-field{
+    flex-direction: column;
+    width: 200px;
+    row-gap: 10px;
+  }
+  .input-field button{
+    width: 100px;
+    padding: 4px 5px;
+  }
+}
